@@ -1,0 +1,1823 @@
+<!DOCTYPE html>
+<html lang="en-US" style="" class="js no-touch js no-touch">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<link rel="pingback" href="xmlrpc.php" />
+
+		<title>Our workshop 2017 – Modelling DH</title>
+		<meta name="robots" content="max-image-preview:large" />
+		<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+		<link rel="dns-prefetch" href="//s.w.org" />
+		<link
+			rel="alternate"
+			type="application/rss+xml"
+			title="Modelling DH » Feed"
+			href="index.php/feed/"
+		/>
+		<link
+			rel="alternate"
+			type="application/rss+xml"
+			title="Modelling DH » Comments Feed"
+			href="index.php/comments/feed/"
+		/>
+		<script type="text/javascript">
+			window._wpemojiSettings = {
+				baseUrl: 'https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/',
+				ext: '.png',
+				svgUrl: 'https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/',
+				svgExt: '.svg',
+				source: {
+					concatemoji: 'https:\/\/modellingdh.eu\/wp-includes\/js\/wp-emoji-release.min.js',
+				},
+			};
+			/*! This file is auto-generated */
+			!(function (e, a, t) {
+				var n,
+					r,
+					o,
+					i = a.createElement('canvas'),
+					p = i.getContext && i.getContext('2d');
+				function s(e, t) {
+					var a = String.fromCharCode,
+						e =
+							(p.clearRect(0, 0, i.width, i.height),
+							p.fillText(a.apply(this, e), 0, 0),
+							i.toDataURL());
+					return (
+						p.clearRect(0, 0, i.width, i.height),
+						p.fillText(a.apply(this, t), 0, 0),
+						e === i.toDataURL()
+					);
+				}
+				function c(e) {
+					var t = a.createElement('script');
+					(t.src = e),
+						(t.defer = t.type = 'text/javascript'),
+						a.getElementsByTagName('head')[0].appendChild(t);
+				}
+				for (
+					o = Array('flag', 'emoji'),
+						t.supports = { everything: !0, everythingExceptFlag: !0 },
+						r = 0;
+					r < o.length;
+					r++
+				)
+					(t.supports[o[r]] = (function (e) {
+						if (!p || !p.fillText) return !1;
+						switch (((p.textBaseline = 'top'), (p.font = '600 32px Arial'), e)) {
+							case 'flag':
+								return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039])
+									? !1
+									: !s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) &&
+											!s(
+												[
+													55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430,
+													56128, 56423, 56128, 56447,
+												],
+												[
+													55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421,
+													8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447,
+												],
+											);
+							case 'emoji':
+								return !s(
+									[129777, 127995, 8205, 129778, 127999],
+									[129777, 127995, 8203, 129778, 127999],
+								);
+						}
+						return !1;
+					})(o[r])),
+						(t.supports.everything = t.supports.everything && t.supports[o[r]]),
+						'flag' !== o[r] &&
+							(t.supports.everythingExceptFlag =
+								t.supports.everythingExceptFlag && t.supports[o[r]]);
+				(t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag),
+					(t.DOMReady = !1),
+					(t.readyCallback = function () {
+						t.DOMReady = !0;
+					}),
+					t.supports.everything ||
+						((n = function () {
+							t.readyCallback();
+						}),
+						a.addEventListener
+							? (a.addEventListener('DOMContentLoaded', n, !1), e.addEventListener('load', n, !1))
+							: (e.attachEvent('onload', n),
+							  a.attachEvent('onreadystatechange', function () {
+									'complete' === a.readyState && t.readyCallback();
+							  })),
+						(e = t.source || {}).concatemoji
+							? c(e.concatemoji)
+							: e.wpemoji && e.twemoji && (c(e.twemoji), c(e.wpemoji)));
+			})(window, document, window._wpemojiSettings);
+		</script>
+		<script src="/wp-includes/js/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+		<style type="text/css">
+			img.wp-smiley,
+			img.emoji {
+				display: inline !important;
+				border: none !important;
+				box-shadow: none !important;
+				height: 1em !important;
+				width: 1em !important;
+				margin: 0 0.07em !important;
+				vertical-align: -0.1em !important;
+				background: none !important;
+				padding: 0 !important;
+			}
+		</style>
+		<link
+			rel="stylesheet"
+			id="wp-block-library-css"
+			href="wp-includes/css/dist/block-library/style.min.css"
+			type="text/css"
+			media="all"
+		/>
+		<style id="global-styles-inline-css" type="text/css">
+			body {
+				--wp--preset--color--black: #000000;
+				--wp--preset--color--cyan-bluish-gray: #abb8c3;
+				--wp--preset--color--white: #ffffff;
+				--wp--preset--color--pale-pink: #f78da7;
+				--wp--preset--color--vivid-red: #cf2e2e;
+				--wp--preset--color--luminous-vivid-orange: #ff6900;
+				--wp--preset--color--luminous-vivid-amber: #fcb900;
+				--wp--preset--color--light-green-cyan: #7bdcb5;
+				--wp--preset--color--vivid-green-cyan: #00d084;
+				--wp--preset--color--pale-cyan-blue: #8ed1fc;
+				--wp--preset--color--vivid-cyan-blue: #0693e3;
+				--wp--preset--color--vivid-purple: #9b51e0;
+				--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
+					135deg,
+					rgba(6, 147, 227, 1) 0%,
+					rgb(155, 81, 224) 100%
+				);
+				--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(
+					135deg,
+					rgb(122, 220, 180) 0%,
+					rgb(0, 208, 130) 100%
+				);
+				--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(
+					135deg,
+					rgba(252, 185, 0, 1) 0%,
+					rgba(255, 105, 0, 1) 100%
+				);
+				--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(
+					135deg,
+					rgba(255, 105, 0, 1) 0%,
+					rgb(207, 46, 46) 100%
+				);
+				--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(
+					135deg,
+					rgb(238, 238, 238) 0%,
+					rgb(169, 184, 195) 100%
+				);
+				--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(
+					135deg,
+					rgb(74, 234, 220) 0%,
+					rgb(151, 120, 209) 20%,
+					rgb(207, 42, 186) 40%,
+					rgb(238, 44, 130) 60%,
+					rgb(251, 105, 98) 80%,
+					rgb(254, 248, 76) 100%
+				);
+				--wp--preset--gradient--blush-light-purple: linear-gradient(
+					135deg,
+					rgb(255, 206, 236) 0%,
+					rgb(152, 150, 240) 100%
+				);
+				--wp--preset--gradient--blush-bordeaux: linear-gradient(
+					135deg,
+					rgb(254, 205, 165) 0%,
+					rgb(254, 45, 45) 50%,
+					rgb(107, 0, 62) 100%
+				);
+				--wp--preset--gradient--luminous-dusk: linear-gradient(
+					135deg,
+					rgb(255, 203, 112) 0%,
+					rgb(199, 81, 192) 50%,
+					rgb(65, 88, 208) 100%
+				);
+				--wp--preset--gradient--pale-ocean: linear-gradient(
+					135deg,
+					rgb(255, 245, 203) 0%,
+					rgb(182, 227, 212) 50%,
+					rgb(51, 167, 181) 100%
+				);
+				--wp--preset--gradient--electric-grass: linear-gradient(
+					135deg,
+					rgb(202, 248, 128) 0%,
+					rgb(113, 206, 126) 100%
+				);
+				--wp--preset--gradient--midnight: linear-gradient(
+					135deg,
+					rgb(2, 3, 129) 0%,
+					rgb(40, 116, 252) 100%
+				);
+				--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+				--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+				--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+				--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+				--wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+				--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+				--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+				--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+				--wp--preset--font-size--small: 13px;
+				--wp--preset--font-size--medium: 20px;
+				--wp--preset--font-size--large: 36px;
+				--wp--preset--font-size--x-large: 42px;
+			}
+			.has-black-color {
+				color: var(--wp--preset--color--black) !important;
+			}
+			.has-cyan-bluish-gray-color {
+				color: var(--wp--preset--color--cyan-bluish-gray) !important;
+			}
+			.has-white-color {
+				color: var(--wp--preset--color--white) !important;
+			}
+			.has-pale-pink-color {
+				color: var(--wp--preset--color--pale-pink) !important;
+			}
+			.has-vivid-red-color {
+				color: var(--wp--preset--color--vivid-red) !important;
+			}
+			.has-luminous-vivid-orange-color {
+				color: var(--wp--preset--color--luminous-vivid-orange) !important;
+			}
+			.has-luminous-vivid-amber-color {
+				color: var(--wp--preset--color--luminous-vivid-amber) !important;
+			}
+			.has-light-green-cyan-color {
+				color: var(--wp--preset--color--light-green-cyan) !important;
+			}
+			.has-vivid-green-cyan-color {
+				color: var(--wp--preset--color--vivid-green-cyan) !important;
+			}
+			.has-pale-cyan-blue-color {
+				color: var(--wp--preset--color--pale-cyan-blue) !important;
+			}
+			.has-vivid-cyan-blue-color {
+				color: var(--wp--preset--color--vivid-cyan-blue) !important;
+			}
+			.has-vivid-purple-color {
+				color: var(--wp--preset--color--vivid-purple) !important;
+			}
+			.has-black-background-color {
+				background-color: var(--wp--preset--color--black) !important;
+			}
+			.has-cyan-bluish-gray-background-color {
+				background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+			}
+			.has-white-background-color {
+				background-color: var(--wp--preset--color--white) !important;
+			}
+			.has-pale-pink-background-color {
+				background-color: var(--wp--preset--color--pale-pink) !important;
+			}
+			.has-vivid-red-background-color {
+				background-color: var(--wp--preset--color--vivid-red) !important;
+			}
+			.has-luminous-vivid-orange-background-color {
+				background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+			}
+			.has-luminous-vivid-amber-background-color {
+				background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+			}
+			.has-light-green-cyan-background-color {
+				background-color: var(--wp--preset--color--light-green-cyan) !important;
+			}
+			.has-vivid-green-cyan-background-color {
+				background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+			}
+			.has-pale-cyan-blue-background-color {
+				background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+			}
+			.has-vivid-cyan-blue-background-color {
+				background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+			}
+			.has-vivid-purple-background-color {
+				background-color: var(--wp--preset--color--vivid-purple) !important;
+			}
+			.has-black-border-color {
+				border-color: var(--wp--preset--color--black) !important;
+			}
+			.has-cyan-bluish-gray-border-color {
+				border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+			}
+			.has-white-border-color {
+				border-color: var(--wp--preset--color--white) !important;
+			}
+			.has-pale-pink-border-color {
+				border-color: var(--wp--preset--color--pale-pink) !important;
+			}
+			.has-vivid-red-border-color {
+				border-color: var(--wp--preset--color--vivid-red) !important;
+			}
+			.has-luminous-vivid-orange-border-color {
+				border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+			}
+			.has-luminous-vivid-amber-border-color {
+				border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+			}
+			.has-light-green-cyan-border-color {
+				border-color: var(--wp--preset--color--light-green-cyan) !important;
+			}
+			.has-vivid-green-cyan-border-color {
+				border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+			}
+			.has-pale-cyan-blue-border-color {
+				border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+			}
+			.has-vivid-cyan-blue-border-color {
+				border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+			}
+			.has-vivid-purple-border-color {
+				border-color: var(--wp--preset--color--vivid-purple) !important;
+			}
+			.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+				background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+			}
+			.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+				background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+			}
+			.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+				background: var(
+					--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange
+				) !important;
+			}
+			.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+				background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+			}
+			.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+				background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+			}
+			.has-cool-to-warm-spectrum-gradient-background {
+				background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+			}
+			.has-blush-light-purple-gradient-background {
+				background: var(--wp--preset--gradient--blush-light-purple) !important;
+			}
+			.has-blush-bordeaux-gradient-background {
+				background: var(--wp--preset--gradient--blush-bordeaux) !important;
+			}
+			.has-luminous-dusk-gradient-background {
+				background: var(--wp--preset--gradient--luminous-dusk) !important;
+			}
+			.has-pale-ocean-gradient-background {
+				background: var(--wp--preset--gradient--pale-ocean) !important;
+			}
+			.has-electric-grass-gradient-background {
+				background: var(--wp--preset--gradient--electric-grass) !important;
+			}
+			.has-midnight-gradient-background {
+				background: var(--wp--preset--gradient--midnight) !important;
+			}
+			.has-small-font-size {
+				font-size: var(--wp--preset--font-size--small) !important;
+			}
+			.has-medium-font-size {
+				font-size: var(--wp--preset--font-size--medium) !important;
+			}
+			.has-large-font-size {
+				font-size: var(--wp--preset--font-size--large) !important;
+			}
+			.has-x-large-font-size {
+				font-size: var(--wp--preset--font-size--x-large) !important;
+			}
+		</style>
+		<link
+			rel="stylesheet"
+			id="zurlcustom-style-css"
+			href="wp-content/plugins/z-url-preview/zurlplugin.css"
+			type="text/css"
+			media="all"
+		/>
+		<style id="zurlcustom-style-inline-css" type="text/css">
+			#at_zurlpreview img {
+				width: 100%;
+				max-width: 100%;
+			}
+		</style>
+		<link
+			rel="stylesheet"
+			id="style-css"
+			href="wp-content/themes/specia%203/style.css"
+			type="text/css"
+			media="all"
+		/>
+		<link
+			rel="stylesheet"
+			id="specia-default-css"
+			href="wp-content/themes/specia%203/css/colors/default.css"
+			type="text/css"
+			media="all"
+		/>
+		<link
+			rel="stylesheet"
+			id="owl-carousel-css"
+			href="wp-content/themes/specia%203/css/owl.carousel.css"
+			type="text/css"
+			media="all"
+		/>
+		<link
+			rel="stylesheet"
+			id="bootstrap-css"
+			href="wp-content/themes/specia%203/css/bootstrap.css"
+			type="text/css"
+			media="all"
+		/>
+		<link
+			rel="stylesheet"
+			id="owl-carousel-theme-css"
+			href="wp-content/themes/specia%203/css/owl.theme.default.min.css"
+			type="text/css"
+			media="all"
+		/>
+		<link
+			rel="stylesheet"
+			id="woo-css"
+			href="wp-content/themes/specia%203/css/woo.css"
+			type="text/css"
+			media="all"
+		/>
+		<link
+			rel="stylesheet"
+			id="specia-form-css"
+			href="wp-content/themes/specia%203/css/form.css"
+			type="text/css"
+			media="all"
+		/>
+		<link
+			rel="stylesheet"
+			id="specia-typography-css"
+			href="wp-content/themes/specia%203/css/typography.css"
+			type="text/css"
+			media="all"
+		/>
+		<link
+			rel="stylesheet"
+			id="specia-media-query-css"
+			href="wp-content/themes/specia%203/css/media-query.css"
+			type="text/css"
+			media="all"
+		/>
+		<link
+			rel="stylesheet"
+			id="specia-widget-css"
+			href="wp-content/themes/specia%203/css/widget.css"
+			type="text/css"
+			media="all"
+		/>
+		<link
+			rel="stylesheet"
+			id="animate-css"
+			href="wp-content/themes/specia%203/css/animate.min.css"
+			type="text/css"
+			media="all"
+		/>
+		<link
+			rel="stylesheet"
+			id="specia-text-rotator-css"
+			href="wp-content/themes/specia%203/css/text-rotator.css"
+			type="text/css"
+			media="all"
+		/>
+		<link
+			rel="stylesheet"
+			id="specia-menus-css"
+			href="wp-content/themes/specia%203/css/menus.css"
+			type="text/css"
+			media="all"
+		/>
+		<link
+			rel="stylesheet"
+			id="font-awesome-css"
+			href="wp-content/themes/specia%203/inc/fonts/font-awesome/css/font-awesome.min.css"
+			type="text/css"
+			media="all"
+		/>
+		<link
+			rel="stylesheet"
+			id="specia-fonts-css"
+			href="//fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800%7CRaleway%3A400%2C700&amp;subset=latin%2Clatin-ext"
+			type="text/css"
+			media="all"
+		/>
+		<link
+			rel="stylesheet"
+			id="zotpress.shortcode.min.css-css"
+			href="wp-content/plugins/zotpress/css/zotpress.shortcode.min.css"
+			type="text/css"
+			media="all"
+		/>
+		<script
+			type="text/javascript"
+			src="/wp-content/plugins/wp-d3/js/d3.v35.min.js"
+			id="d3-js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/wp-includes/js/jquery/jquery.min.js"
+			id="jquery-core-js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/wp-includes/js/jquery/jquery-migrate.min.js"
+			id="jquery-migrate-js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/wp-content/themes/specia%203/js/owl.carousel.min.js"
+			id="owl-carousel-js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/wp-content/themes/specia%203/js/bootstrap.min.js"
+			id="bootstrap-js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/wp-content/themes/specia%203/js/jquery.simple-text-rotator.min.js"
+			id="jquery-text-rotator-js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/wp-content/themes/specia%203/js/jquery.sticky.js"
+			id="jquery-sticky-js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/wp-content/themes/specia%203/js/wow.min.js"
+			id="wow-min-js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/wp-content/themes/specia%203/js/component.js"
+			id="specia-service-component-js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/wp-content/themes/specia%203/js/modernizr.custom.js"
+			id="specia-service-modernizr-custom-js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/wp-content/themes/specia%203/js/custom.js"
+			id="specia-custom-js-js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/wp-content/themes/specia%203/js/dropdown.js"
+			id="specia-dropdown-js"
+		></script>
+		<link rel="https://api.w.org/" href="index.php/wp-json/" />
+		<link
+			rel="alternate"
+			type="application/json"
+			href="https://modellingdh.eu/index.php/wp-json/wp/v2/pages/219"
+		/>
+		<link
+			rel="EditURI"
+			type="application/rsd+xml"
+			title="RSD"
+			href="https://modellingdh.eu/xmlrpc.php?rsd"
+		/>
+		<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
+		<meta name="generator" content="WordPress 6.0.3" />
+		<link rel="canonical" href="/index.php/events/our-workshop-2017/" />
+		<link rel="shortlink" href="?p=219" />
+		<link
+			rel="alternate"
+			type="application/json+oembed"
+			href="index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmodellingdh.eu%2Findex.php%2Fevents%2Four-workshop-2017%2F"
+		/>
+		<link
+			rel="alternate"
+			type="text/xml+oembed"
+			href="index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmodellingdh.eu%2Findex.php%2Fevents%2Four-workshop-2017%2F&amp;format=xml"
+		/>
+		<style type="text/css">
+			.qtranxs_flag_en {
+				background-image: url(https://modellingdh.eu/wp-content/plugins/qtranslate-x/flags/gb.png);
+				background-repeat: no-repeat;
+			}
+			.qtranxs_flag_de {
+				background-image: url(https://modellingdh.eu/wp-content/plugins/qtranslate-x/flags/de.png);
+				background-repeat: no-repeat;
+			}
+			.qtranxs_flag_it {
+				background-image: url(https://modellingdh.eu/wp-content/plugins/qtranslate-x/flags/it.png);
+				background-repeat: no-repeat;
+			}
+		</style>
+		<link hreflang="en" href="/index.php/events/our-workshop-2017/?lang=en" rel="alternate" />
+		<link hreflang="de" href="/index.php/events/our-workshop-2017/?lang=de" rel="alternate" />
+		<link hreflang="it" href="/index.php/events/our-workshop-2017/?lang=it" rel="alternate" />
+		<link hreflang="x-default" href="/index.php/events/our-workshop-2017/" rel="alternate" />
+		<meta name="generator" content="qTranslate-X 3.4.6.8" />
+		<link
+			rel="icon"
+			href="wp-content/uploads/2017/05/cropped-cropped-Logo_final-version-09-32x32.png"
+			sizes="32x32"
+		/>
+		<link
+			rel="icon"
+			href="wp-content/uploads/2017/05/cropped-cropped-Logo_final-version-09-192x192.png"
+			sizes="192x192"
+		/>
+		<link
+			rel="apple-touch-icon"
+			href="wp-content/uploads/2017/05/cropped-cropped-Logo_final-version-09-180x180.png"
+		/>
+		<meta
+			name="msapplication-TileImage"
+			content="https://modellingdh.eu/wp-content/uploads/2017/05/cropped-cropped-Logo_final-version-09-270x270.png"
+		/>
+	</head>
+
+	<body
+		class="page-template page-template-templates page-template-page-full-width page-template-templatespage-full-width-php page page-id-219 page-child parent-pageid-117 wp-custom-logo"
+	>
+		<div id="page" class="site">
+			<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+
+			<header role="banner">
+				<div id="sticky-wrapper" class="sticky-wrapper" style="height: 278px">
+					<nav class="navbar navbar-default sticky-nav" role="navigation">
+						<div class="container">
+							<!-- Mobile Display -->
+							<div class="navbar-header">
+								<a class="navbar-brand" href=""> </a
+								><a href="" class="custom-logo-link" rel="home"
+									><img
+										width="548"
+										height="160"
+										src="/wp-content/uploads/2017/05/cropped-Bildschirmfoto-2017-05-26-um-10.29.16-3.png"
+										class="custom-logo"
+										alt="Modelling DH"
+										srcset="
+											/wp-content/uploads/2017/05/cropped-Bildschirmfoto-2017-05-26-um-10.29.16-3.png                              548w,
+											https://modellingdh.eu/wp-content/uploads/2017/05/cropped-Bildschirmfoto-2017-05-26-um-10.29.16-3-300x88.png 300w
+										"
+										sizes="(max-width: 548px) 100vw, 548px"
+								/></a>
+								<p class="site-description">Modelling Digital Humanities</p>
+
+								<button
+									type="button"
+									class="navbar-toggle collapsed"
+									data-toggle="collapse"
+									data-target="#bs-example-navbar-collapse-1"
+								>
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+							<!-- /Mobile Display -->
+
+							<!-- Menu Toggle -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul id="menu-main" class="nav navbar-nav navbar-right">
+									<li
+										id="menu-item-201"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-201"
+									>
+										<a href="">Home</a>
+									</li>
+									<li
+										id="menu-item-200"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-200 dropdown"
+									>
+										<a href="/index.php/about/">About <i class="caret"></i></a>
+										<ul class="dropdown-menu">
+											<li
+												id="menu-item-226"
+												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-226"
+											>
+												<a href="/index.php/about/what-they-say-about-us/"
+													>What they say about us</a
+												>
+											</li>
+										</ul>
+									</li>
+									<li
+										id="menu-item-196"
+										class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-196 dropdown active"
+									>
+										<a href="/index.php/events/">Events <i class="caret"></i></a>
+										<ul class="dropdown-menu">
+											<li
+												id="menu-item-221"
+												class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-219 current_page_item menu-item-221 active"
+											>
+												<a href="/index.php/events/our-workshop-2017/">Our workshop 2017</a>
+											</li>
+											<li
+												id="menu-item-495"
+												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-495"
+											>
+												<a href="/index.php/events/external-events/">External Events</a>
+											</li>
+										</ul>
+									</li>
+									<li
+										id="menu-item-536"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-536"
+									>
+										<a href="index.php/galleries/">Gallery</a>
+									</li>
+									<li
+										id="menu-item-191"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-191 dropdown"
+									>
+										<a href="index.php/resources-2/">Resources <i class="caret"></i></a>
+										<ul class="dropdown-menu">
+											<li
+												id="menu-item-192"
+												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-192"
+											>
+												<a href="index.php/resources-2/publications/">Publications</a>
+											</li>
+											<li
+												id="menu-item-193"
+												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-193"
+											>
+												<a href="index.php/resources-2/project-bibliography/"
+													>Project Bibliography</a
+												>
+											</li>
+											<li
+												id="menu-item-194"
+												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-194"
+											>
+												<a href="index.php/resources-2/material/">Material</a>
+											</li>
+										</ul>
+									</li>
+									<li
+										id="menu-item-197"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-197 dropdown"
+									>
+										<a href="index.php/contact/">Contact <i class="caret"></i></a>
+										<ul class="dropdown-menu">
+											<li
+												id="menu-item-198"
+												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-198"
+											>
+												<a href="index.php/contact/postcard/">Postcard</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<!-- Menu Toggle -->
+						</div>
+					</nav>
+				</div>
+			</header>
+			<div class="clearfix"></div>
+
+			<div id="content" class="site-content" role="main">
+				<section class="breadcrumb">
+					<div class="background-overlay">
+						<div class="container">
+							<div class="row padding-top-10 padding-bottom-10">
+								<div class="col-md-6 col-xs-12 col-sm-6">
+									<h2></h2>
+								</div>
+
+								<div class="col-md-6 col-xs-12 col-sm-6 breadcrumb-position">
+									<ul class="page-breadcrumb">
+										<li>
+											<a href="https://modellingdh.eu">Home</a> &nbsp; / &nbsp;<a
+												href="/index.php/events/"
+												>Events</a
+											>&nbsp; / &nbsp;
+										</li>
+										<li class="active">Our workshop 2017</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="clearfix"></div>
+				<section class="page-wrapper">
+					<div class="container">
+						<div class="row padding-top-60 padding-bottom-60">
+							<div class="col-md-12 col-sm-12">
+								<div class="site-content">
+									<h1 style="text-align: center">
+										<strong>Our&nbsp;interdisciplinary workshop</strong>
+									</h1>
+									<h1 style="text-align: center">Thinking in Practice</h1>
+									<p>
+										<a
+											href="http://modellingdh.uni-koeln.de/index.php/events/our-workshop-2017/collage700/"
+											rel="attachment wp-att-418"
+											><img
+												class="wp-image-418 aligncenter"
+												src="/wp-content/uploads/2017/01/collage700-300x300.png"
+												alt=""
+												width="545"
+												height="545"
+												srcset="
+													https://modellingdh.eu/wp-content/uploads/2017/01/collage700-300x300.png 300w,
+													https://modellingdh.eu/wp-content/uploads/2017/01/collage700-150x150.png 150w,
+													https://modellingdh.eu/wp-content/uploads/2017/01/collage700.png         700w
+												"
+												sizes="(max-width: 545px) 100vw, 545px"
+										/></a>
+									</p>
+									<h1 style="text-align: center"></h1>
+									<h2 style="text-align: center">
+										<strong>in Cologne (Germany)&nbsp;</strong
+										><em
+											><strong
+												><a href="http://www.schloss-wahn.com/">Wahn Manor House</a>&nbsp;
+											</strong></em
+										>
+									</h2>
+									<h2 style="text-align: center">
+										<strong
+											>on 19-20 January, 2017
+											<p></p>
+											<style type="text/css">
+												<!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->
+											</style></strong
+										>
+										<p><strong></strong></p>
+									</h2>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>
+										<strong
+											><span style="color: #ff0000"
+												>Please find further information for participants
+												<em
+													><a
+														style="color: #ff0000"
+														href="http://modellingdh.uni-koeln.de/index.php/internal-workshop-page/"
+														>(INTERNAL WORKSHOP PAGE) here</a
+													>.</em
+												></span
+											></strong
+										>
+									</p>
+									<p>&nbsp;</p>
+									<h2>Participants</h2>
+									<p>&nbsp;</p>
+									<table>
+										<tbody>
+											<tr>
+												<td colspan="2"><b>Speakers</b></td>
+											</tr>
+											<tr>
+												<td>
+													<a
+														href="http://www.uva.nl/over-de-uva/organisatie/medewerkers/content/b/o/l.w.m.bod/l.w.m.bod.html"
+														><span style="font-weight: 400">Rens Bod</span></a
+													>
+												</td>
+												<td>
+													<span style="font-weight: 400"
+														>Professor of Digital Humanities, Director of the Center for Digital
+														Humanities and Director of the Vossius Center for the History of
+														Humanities and Sciences, University of Amsterdam (Netherlands)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a
+														href="http://findresearcher.sdu.dk/portal/en/persons/nina-bonderup-dohn(09dc6a05-3a89-430e-ad9f-0e304caa0a48).html"
+														><span style="font-weight: 400">Nina Bonderup Dohn</span></a
+													>
+												</td>
+												<td>
+													<span style="font-weight: 400"
+														>Associate Professor, Department of Design and Communication, University
+														of Southern Denmark, Kolding (Denmark)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="https://www.utdallas.edu/chairs/profiles/fishwick.html"
+														><span style="font-weight: 400">Paul Fishwick</span></a
+													>
+												</td>
+												<td>
+													<span style="font-weight: 400"
+														>Distinguished University Chair of Arts, Technology, and Emerging
+														Communication and Professor of Computer Science, University of Texas,
+														Dallas (USA)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="http://www.bioinformatica.crs4.it/giorgiofotia"
+														><span style="font-weight: 400">Giorgio Fotia</span></a
+													>
+												</td>
+												<td>
+													<span style="font-weight: 400"
+														>Director of the Bioinformatics Program, Center for Advanced Studies,
+														Research, and Development in Sardinia (CRS4), Pula (Italy)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="https://www.mpiwg-berlin.mpg.de/en/users/ggoerz"
+														><span style="font-weight: 400">Günther Görz</span></a
+													>
+												</td>
+												<td>
+													<span style="font-weight: 400"
+														>Professor Emeritus, Computer Science Department, University of
+														Erlangen-Nürnberg (Germany)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="http://www.jannidis.de/"
+														><span style="font-weight: 400">Fotis Jannidis</span></a
+													>
+												</td>
+												<td>
+													<span style="font-weight: 400"
+														>Professor and Chair of Computer Science and Modern German Literary
+														History, Institute for German Philology, University of Würzburg
+														(Germany)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a
+														href="https://www.klassalt.uni-kiel.de/de/abteilungen/graezistik/websites/lattmann"
+														><span style="font-weight: 400">Claas Lattmann</span></a
+													>
+												</td>
+												<td>
+													<span style="font-weight: 400"
+														>Assistant Professor, Institute of Classical Archaeology, University of
+														Kiel (Germany)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="http://www.es.uzh.ch/en/aboutus/team/cljungberg.html"
+														><span style="font-weight: 400">Christina Ljungberg</span></a
+													>
+												</td>
+												<td>
+													<span style="font-weight: 400"
+														>Professor of English and American literary studies, English Department,
+														University of Zurich (Switzerland)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="http://www.mccarty.org.uk/"
+														><span style="font-weight: 400">Willard McCarty</span></a
+													>
+												</td>
+												<td>
+													<span style="font-weight: 400"
+														>Professor of Humanities Computing, Department of Digital Humanities,
+														King’s College London, University of London (UK)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a
+														href="https://www.ufg.uni-kiel.de/de/mitarbeiterinnen/professoren/onakoinz"
+														><span style="font-weight: 400">Oliver Nakoinz</span></a
+													>
+												</td>
+												<td>
+													<span style="font-weight: 400"
+														>Heisenberg-Fellow and Lecturer, Institute of Prehistoric and
+														Protohistoric Archaeology, University of Kiel (Germany)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="http://katalog.uu.se/empinfo/?id=N96-1826"
+														><span style="font-weight: 400">Gunnar Olsson</span></a
+													>
+												</td>
+												<td>
+													<span style="font-weight: 400"
+														>Professor Emeritus of Economic Geography, University of Uppsala
+														(Sweden)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="https://www.unibo.it/sitoweb/francesca.tomasi/cv-en"
+														><span style="font-weight: 400">Francesca Tomasi</span></a
+													>
+												</td>
+												<td>
+													<span style="font-weight: 400"
+														>Researcher, Department of Classics and Italian Studies, University of
+														Bologna (Italy)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="https://www.researchgate.net/profile/Barbara_Tversky"
+														><span style="font-weight: 400">Barbara Tversky</span></a
+													>
+												</td>
+												<td>
+													<span style="font-weight: 400"
+														>Professor Emerita of Psychology, Stanford University; Professor of
+														Psychology and Education, Teachers College, Columbia University
+														(USA)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td colspan="2"><b>Other participants</b></td>
+											</tr>
+											<tr>
+												<td>
+													<a href="http://www.phil.uni-passau.de/dh/lehrstuhlteam/jonas-kerschner/"
+														><span style="font-weight: 400">Jonas Kerschner</span></a
+													>
+												</td>
+												<td>
+													<span style="font-weight: 400"
+														>Research Associate, Digital Humanities, University of Passau
+														(Germany)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a
+														href="https://www.volkswagenstiftung.de/nc/de/stiftung/organisation-und-gremien/mitarbeiter.html?tx_itaostaff_pi1%5Bemployee%5D=54&amp;tx_itaostaff_pi1%5Baction%5D=show&amp;tx_itaostaff_pi1%5Bcontroller%5D=Employee&amp;cHash=e30cc94fd68151cabc92b20b77400bb2"
+														><span style="font-weight: 400">Vera Szöllösi</span></a
+													>
+												</td>
+												<td>
+													<span style="font-weight: 400"
+														>Program Director, Volkswagen Foundation, Hannover (Germany)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td colspan="2"><b>Project team</b></td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">Arianna Ciula</span></td>
+												<td>
+													<span style="font-weight: 400"
+														>Research Fellow and Research Facilitator, Department of Humanities,
+														University of Roehampton, London (UK)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">Øyvind Eide</span></td>
+												<td>
+													<span style="font-weight: 400"
+														>Lecturer and Research Associate, Chair of Digital Humanities,
+														University of Passau (Germany)</span
+													>
+													<p></p>
+													<p>
+														<span style="font-weight: 400"
+															>Acting Professor in Digital Humanities, University of Cologne
+															(Germany)</span
+														>
+													</p>
+												</td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">Cristina Marras</span></td>
+												<td>
+													<span style="font-weight: 400"
+														>Researcher, Istituto per il Lessico Intellettuale Europeo e la Storia
+														delle Idee (ILIESI), Consiglio Nazionale delle Ricerche, Rome
+														(Italy)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">Patrick Sahle</span></td>
+												<td>
+													<span style="font-weight: 400"
+														>Professor of Digital Humanities, Cologne Center for eHumanities (CCeH),
+														University of Cologne (Germany)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">Nils Geißler</span></td>
+												<td>
+													<span style="font-weight: 400"
+														>Research Assistant, Cologne Center for eHumanities (CCeH), University
+														of Cologne (Germany)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">Elli Reuhl</span></td>
+												<td>
+													<span style="font-weight: 400"
+														>Student Assistant, Cologne Center for eHumanities (CCeH), University of
+														Cologne (Germany)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">Zoe Schubert</span></td>
+												<td>
+													<span style="font-weight: 400"
+														>Research Associate, Digital Humanities, University of Passau
+														(Germany)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">Julia Sorouri</span></td>
+												<td>
+													<span style="font-weight: 400"
+														>Student Assistant, Köln International School of Design, Cologne
+														(Germany)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">Michela Tardella</span></td>
+												<td>
+													<span style="font-weight: 400"
+														>Research Assistant, Istituto per il Lessico Intellettuale Europeo e la
+														Storia delle Idee (ILIESI), Consiglio Nazionale delle Ricerche, Rome
+														(Italy)</span
+													>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<p>
+										<span style="color: #ffffff"
+											><br />
+											white</span
+										>
+									</p>
+									<p><span style="color: #ffffff">white</span></p>
+									<h2>Programme</h2>
+									<h4><span style="color: #ffffff">white</span></h4>
+									<h4><span style="font-weight: 400">Wednesday January 18</span></h4>
+									<ul>
+										<li style="font-weight: 400">
+											<b>19:45</b
+											><span style="font-weight: 400">
+												Participants at Hotel Geisler can meet in the hotel lobby to take a taxi
+												together; Participants at Hotel Karsten can walk to the restaurant (5
+												minutes)</span
+											>
+										</li>
+										<li style="font-weight: 400">
+											<b>20:00</b
+											><span style="font-weight: 400">
+												Informal dinner at Restaurant LaFonte (Heidestraße 246 in
+												Cologne-Wahn)</span
+											>
+										</li>
+									</ul>
+									<h3><span style="font-weight: 400">Programme</span></h3>
+									<table>
+										<tbody>
+											<tr>
+												<td colspan="3">
+													<h4><b>Thursday January 19</b></h4>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="3">
+													<span style="font-weight: 400"
+														>Please note: Each speaker has maximum 20 mins to present own statement
+														and 10 mins to respond to colleague’s statement.</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">09.00-09.15</span></td>
+												<td><span style="font-weight: 400">Welcome</span></td>
+												<td><span style="font-weight: 400">Coffee and registration</span></td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">09.15-09.45</span></td>
+												<td><span style="font-weight: 400">Introduction</span></td>
+												<td>
+													<ul>
+														<li style="font-weight: 400">
+															<span style="font-weight: 400"
+																>Welcome and introduction on behalf of UoC (Patrick Sahle)</span
+															>
+														</li>
+														<li style="font-weight: 400">
+															<span style="font-weight: 400"
+																>Puzzle matching (Cristina Marras)
+															</span>
+														</li>
+														<li style="font-weight: 400">
+															<span style="font-weight: 400"
+																>Dialogue introduction (Arianna Ciula, Øyvind Eide)</span
+															>
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">09.45-11.15</span></td>
+												<td>
+													<span style="font-weight: 400">Session 1a</span>
+													<p></p>
+													<p><span style="font-weight: 400">Facilitator:</span></p>
+													<p><span style="font-weight: 400">Arianna Ciula</span></p>
+												</td>
+												<td>
+													<ul>
+														<li style="font-weight: 400">
+															<b>Willard McCarty</b
+															><span style="font-weight: 400"
+																>: “Modelling, ontology and wild thought”,</span
+															><span style="font-weight: 400"><br /> </span><b>Nina Bonderup Dohn</b
+															><span style="font-weight: 400"
+																>: “Models, modelling, metaphors and metaphorical thinking –
+																position paper from an educational philosophical view”</span
+															>
+														</li>
+														<li style="font-weight: 400">
+															<span style="font-weight: 400">Short discussion</span>
+														</li>
+														<li style="font-weight: 400">
+															<span style="font-weight: 400"
+																>Introduction to exercises (Cristina Marras)</span
+															>
+														</li>
+														<li style="font-weight: 400">
+															<span style="font-weight: 400"
+																>Exercise: Metaphorical Navigation (Cristina Marras)</span
+															>
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">11.15-11.30</span></td>
+												<td colspan="2"><span style="font-weight: 400">Coffee break</span></td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">11.30-13.00</span></td>
+												<td>
+													<span style="font-weight: 400">Session 1b</span>
+													<p></p>
+													<p><span style="font-weight: 400">Facilitator:</span></p>
+													<p><span style="font-weight: 400">Øyvind Eide</span></p>
+												</td>
+												<td>
+													<ul>
+														<li style="font-weight: 400">
+															<b>Barbara Tversky</b
+															><span style="font-weight: 400">: “Visual Communication”,</span
+															><span style="font-weight: 400"><br /> </span
+															><b>Christina Ljungberg</b
+															><span style="font-weight: 400"
+																>: “The role of iconicity in cognition and communication”</span
+															>
+														</li>
+														<li style="font-weight: 400">
+															<span style="font-weight: 400">Short discussion </span>
+														</li>
+														<li style="font-weight: 400">
+															<span style="font-weight: 400"
+																>Repositioning exercise: MetaMaps (Cristina Marras)
+															</span>
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">13.00-14.00</span></td>
+												<td colspan="2">
+													<span style="font-weight: 400">Catered lunch – Pizza Service</span>
+												</td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">14.00-15.00</span></td>
+												<td colspan="2"><span style="font-weight: 400">Guided tour</span></td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">15.00-16.30</span></td>
+												<td>
+													<span style="font-weight: 400">Session 2a</span>
+													<p></p>
+													<p><span style="font-weight: 400">Facilitator: </span></p>
+													<p><span style="font-weight: 400">Patrick Sahle</span></p>
+												</td>
+												<td>
+													<ul>
+														<li style="font-weight: 400">
+															<b>Rens Bod</b
+															><span style="font-weight: 400">: “Notes on Modelling”,</span
+															><span style="font-weight: 400"><br /> </span><b>Fotis Jannidis</b
+															><span style="font-weight: 400"
+																>: “Modelling in the Digital Humanities”</span
+															>
+														</li>
+														<li style="font-weight: 400">
+															<span style="font-weight: 400">Short discussion </span>
+														</li>
+														<li style="font-weight: 400">
+															<span style="font-weight: 400"
+																>Repositioning exercise: Metaphorical Navigation (Cristina Marras)
+															</span>
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">16.30-16.45</span></td>
+												<td colspan="2"><span style="font-weight: 400">Coffee break</span></td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">16.45-18.00</span></td>
+												<td>
+													<span style="font-weight: 400">Session 2b</span>
+													<p></p>
+													<p><span style="font-weight: 400">Facilitator:</span></p>
+													<p><span style="font-weight: 400">Cristina Marras</span></p>
+												</td>
+												<td>
+													<ul>
+														<li style="font-weight: 400">
+															<b>Oliver Nakoinz</b
+															><span style="font-weight: 400"
+																>: “Models and Modelling in Archaeology”,</span
+															><span style="font-weight: 400"><br /> </span
+															><span style="font-weight: 400">Øyvind Eide</span>
+														</li>
+														<li style="font-weight: 400">
+															<span style="font-weight: 400">Short discussion </span>
+														</li>
+														<li style="font-weight: 400">
+															<span style="font-weight: 400"
+																>Repositioning exercise: MetaMaps (Cristina Marras)</span
+															>
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">18.00-18.15</span></td>
+												<td><span style="font-weight: 400">Closing day 1</span></td>
+												<td>
+													<span style="font-weight: 400"
+														>Summing up first day (Arianna Ciula, Cristina Marras)</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">20:00</span></td>
+												<td><span style="font-weight: 400">Dinner</span></td>
+												<td>
+													<span style="font-weight: 400">Eltzhof Kulturgut </span
+													><a href="http://www.eltzhof-kulturgut.de/brauhaus/"
+														><span style="font-weight: 400"
+															>http://www.eltzhof-kulturgut.de/brauhaus/</span
+														></a
+													>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<h4></h4>
+									<table>
+										<tbody>
+											<tr>
+												<td colspan="3">
+													<h4><b>Friday January 20</b></h4>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="3">
+													<span style="font-weight: 400"
+														>Please note: Each speaker has maximum 20 mins to present own statement
+														and 10 mins to respond to colleague’s statement.</span
+													>
+												</td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">09.00-09.30</span></td>
+												<td colspan="2"><span style="font-weight: 400">Coffee</span></td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">9.30-11.00</span></td>
+												<td>
+													<span style="font-weight: 400">Session 3a</span>
+													<p></p>
+													<p><span style="font-weight: 400">Facilitator:</span></p>
+													<p><span style="font-weight: 400">Øyvind Eide</span></p>
+												</td>
+												<td>
+													<ul>
+														<li style="font-weight: 400">
+															<b>Gunnar Olsson</b
+															><span style="font-weight: 400"
+																>: “EVERYTHING IS TRANSLATION (including the art of making new boots
+																out of the old ones)”,</span
+															><span style="font-weight: 400"><br /> </span><b>Claas Lattmann</b
+															><span style="font-weight: 400"
+																>: “Iconizing the Digital Humanities. Models and Modeling from a
+																Semiotic Perspective”</span
+															>
+														</li>
+													</ul>
+													<ul>
+														<li style="font-weight: 400">
+															<span style="font-weight: 400">Short discussion </span>
+														</li>
+														<li style="font-weight: 400">
+															<span style="font-weight: 400"
+																>Repositioning exercise: Metaphorical Navigation (Cristina
+																Marras)</span
+															>
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">11.15-11.30</span></td>
+												<td colspan="2"><span style="font-weight: 400">Coffee break</span></td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">11.30-13.00</span></td>
+												<td>
+													<span style="font-weight: 400">Session 3b</span>
+													<p></p>
+													<p><span style="font-weight: 400">Facilitator:</span></p>
+													<p><span style="font-weight: 400">Cristina Marras</span></p>
+												</td>
+												<td>
+													<ul>
+														<li style="font-weight: 400">
+															<b>Giorgio Fotia</b
+															><span style="font-weight: 400"
+																>: “Modelling practices and practices of modelling”,</span
+															><span style="font-weight: 400"><br /> </span><b>Paul Fishwick</b
+															><span style="font-weight: 400"
+																>: “Information Modelling of the Humanities”</span
+															>
+														</li>
+														<li style="font-weight: 400">
+															<span style="font-weight: 400">Short discussion </span>
+														</li>
+														<li style="font-weight: 400">
+															<span style="font-weight: 400"
+																>Repositioning exercise: MetaMaps (Cristina Marras)</span
+															>
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">13.00-14.00</span></td>
+												<td colspan="2"><span style="font-weight: 400">Catered lunch</span></td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">14.00-14.30</span></td>
+												<td><span style="font-weight: 400">Go create</span></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">14.30-16.00</span></td>
+												<td>
+													<span style="font-weight: 400">Session 4a</span>
+													<p></p>
+													<p><span style="font-weight: 400">Facilitator:</span></p>
+													<p><span style="font-weight: 400">Patrick Sahle</span></p>
+												</td>
+												<td>
+													<ul>
+														<li style="font-weight: 400">
+															<b>Günther Görz</b
+															><span style="font-weight: 400"
+																>: “Some Remarks on Modelling from a Computer Science
+																Perspective”,</span
+															><span style="font-weight: 400"><br /> </span><b>Francesca Tomasi</b
+															><span style="font-weight: 400"
+																>: “Modelling is my favourite job”</span
+															>
+														</li>
+														<li style="font-weight: 400">
+															<span style="font-weight: 400">Short discussion</span>
+														</li>
+													</ul>
+													<ul>
+														<li style="font-weight: 400">
+															<span style="font-weight: 400"
+																>Repositioning exercise: Metaphorical Navigation (Cristina
+																Marras)</span
+															>
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">16.00-16.15</span></td>
+												<td colspan="2"><span style="font-weight: 400">Coffee break</span></td>
+											</tr>
+											<tr>
+												<td><span style="font-weight: 400">16.15-17.30</span></td>
+												<td>
+													<span style="font-weight: 400">Session 4b</span>
+													<p></p>
+													<p><span style="font-weight: 400">Closing </span></p>
+												</td>
+												<td>
+													<ul>
+														<li style="font-weight: 400">
+															<span style="font-weight: 400"
+																>Drag-and-drop conclusive exercise and discussion (Cristina
+																Marras)</span
+															>
+														</li>
+													</ul>
+													<ul>
+														<li style="font-weight: 400">
+															<span style="font-weight: 400"
+																>Summing up both days (Patrick Sahle)</span
+															>
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<h4>
+										<span style="font-weight: 400"><br /> </span
+										><span style="color: #ffffff">white</span>
+									</h4>
+									<p>&nbsp;</p>
+								</div>
+
+								<div id="comments" class="comments-area"></div>
+								<!-- #comments -->
+							</div>
+							<!-- /.col -->
+						</div>
+						<!-- /.row -->
+					</div>
+					<!-- /.container -->
+				</section>
+
+				<!--======================================
+    Footer Section
+========================================-->
+				<footer class="footer-sidebar" role="contentinfo">
+					<div class="background-overlay">
+						<div class="container">
+							<div class="row padding-top-60 padding-bottom-60">
+								<div class="col-md-3 col-sm-6">
+									<aside id="search-2" class="widget">
+										<h3 class="widget-title">Search</h3>
+										<div class="title-border"></div>
+										<form
+											role="search"
+											method="get"
+											class="search-form"
+											action="https://modellingdh.eu/"
+										>
+											<label>
+												<span class="screen-reader-text">Search for:</span>
+												<input
+													type="search"
+													class="search-field"
+													placeholder="Search …"
+													value=""
+													name="s"
+												/>
+											</label>
+											<input type="submit" class="search-submit" value="Search" />
+										</form>
+									</aside>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<aside id="calendar-2" class="widget">
+										<h3 class="widget-title">Calendar</h3>
+										<div class="title-border"></div>
+										<div id="calendar_wrap" class="calendar_wrap">
+											<table id="wp-calendar" class="wp-calendar-table">
+												<caption>
+													November 2022
+												</caption>
+												<thead>
+													<tr>
+														<th scope="col" title="Monday">M</th>
+														<th scope="col" title="Tuesday">T</th>
+														<th scope="col" title="Wednesday">W</th>
+														<th scope="col" title="Thursday">T</th>
+														<th scope="col" title="Friday">F</th>
+														<th scope="col" title="Saturday">S</th>
+														<th scope="col" title="Sunday">S</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td colspan="1" class="pad">&nbsp;</td>
+														<td>1</td>
+														<td>2</td>
+														<td>3</td>
+														<td>4</td>
+														<td>5</td>
+														<td>6</td>
+													</tr>
+													<tr>
+														<td>7</td>
+														<td>8</td>
+														<td>9</td>
+														<td>10</td>
+														<td>11</td>
+														<td>12</td>
+														<td>13</td>
+													</tr>
+													<tr>
+														<td>14</td>
+														<td>15</td>
+														<td>16</td>
+														<td>17</td>
+														<td>18</td>
+														<td>19</td>
+														<td>20</td>
+													</tr>
+													<tr>
+														<td>21</td>
+														<td>22</td>
+														<td>23</td>
+														<td id="today">24</td>
+														<td>25</td>
+														<td>26</td>
+														<td>27</td>
+													</tr>
+													<tr>
+														<td>28</td>
+														<td>29</td>
+														<td>30</td>
+														<td class="pad" colspan="4">&nbsp;</td>
+													</tr>
+												</tbody>
+											</table>
+											<nav aria-label="Previous and next months" class="wp-calendar-nav">
+												<span class="wp-calendar-nav-prev">&nbsp;</span>
+												<span class="pad">&nbsp;</span>
+												<span class="wp-calendar-nav-next">&nbsp;</span>
+											</nav>
+										</div>
+									</aside>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<aside id="pages-2" class="widget">
+										<h3 class="widget-title">Pages</h3>
+										<div class="title-border"></div>
+										<ul>
+											<li class="page_item page-item-106 page_item_has_children">
+												<a href="/index.php/about/">About</a>
+												<ul class="children">
+													<li class="page_item page-item-224">
+														<a href="/index.php/about/what-they-say-about-us/"
+															>What they say about us</a
+														>
+													</li>
+												</ul>
+											</li>
+											<li class="page_item page-item-109 page_item_has_children">
+												<a href="index.php/contact/">Contact</a>
+												<ul class="children">
+													<li class="page_item page-item-111">
+														<a href="index.php/contact/contact-details/">Contact Details</a>
+													</li>
+													<li class="page_item page-item-113">
+														<a href="index.php/contact/postcard/">Postcard</a>
+													</li>
+												</ul>
+											</li>
+											<li
+												class="page_item page-item-117 page_item_has_children current_page_ancestor current_page_parent"
+											>
+												<a href="/index.php/events/">Events</a>
+												<ul class="children">
+													<li class="page_item page-item-219 current_page_item">
+														<a href="/index.php/events/our-workshop-2017/" aria-current="page"
+															>Our workshop 2017</a
+														>
+													</li>
+													<li class="page_item page-item-493">
+														<a href="/index.php/events/external-events/">External Events</a>
+													</li>
+												</ul>
+											</li>
+											<li class="page_item page-item-533">
+												<a href="index.php/galleries/">Gallery</a>
+											</li>
+											<li class="page_item page-item-55"><a href="">Home</a></li>
+											<li class="page_item page-item-255">
+												<a href="index.php/internal-workshop-page/">Internal workshop page</a>
+											</li>
+											<li class="page_item page-item-182 page_item_has_children">
+												<a href="index.php/resources-2/">Resources</a>
+												<ul class="children">
+													<li class="page_item page-item-184 page_item_has_children">
+														<a href="index.php/resources-2/material/">Material</a>
+														<ul class="children">
+															<li class="page_item page-item-661">
+																<a
+																	href="index.php/resources-2/material/blog-post-an-exercise-in-visualisation/"
+																	>Blog post – An exercise in visualisation</a
+																>
+															</li>
+														</ul>
+													</li>
+													<li class="page_item page-item-186">
+														<a href="index.php/resources-2/project-bibliography/"
+															>Project Bibliography</a
+														>
+													</li>
+													<li class="page_item page-item-188">
+														<a href="index.php/resources-2/publications/">Publications</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</aside>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+
+				<div class="clearfix"></div>
+
+				<!--======================================
+    Footer Copyright
+========================================-->
+
+				<section class="footer-copyright">
+					<div class="container">
+						<div class="row padding-top-20 padding-bottom-10">
+							<div class="col-md-6 text-left">
+								<p></p>
+							</div>
+
+							<div class="col-md-6"></div>
+						</div>
+					</div>
+				</section>
+
+				<!--======================================
+    Top Scroller
+========================================-->
+				<a href="#" class="top-scroll"><i class="fa fa-hand-o-up"></i></a>
+			</div>
+			<script
+				type="text/javascript"
+				src="/wp-content/themes/specia%203/js/skip-link-focus-fix.js"
+				id="skip-link-focus-fix-js"
+			></script>
+		</div>
+	</body>
+</html>
