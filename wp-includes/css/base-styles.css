@@ -37,6 +37,30 @@ img.emoji {
   background-repeat: no-repeat;
 }
 
+div.slideshow_container {
+  --width: 720px;
+  --height: 400px;
+  height: var(--height);
+  width: 100%;
+}
+
+div.slideshow_content {
+  width: var(--width);
+  height: var(--height);
+  margin:  0 auto;
+}
+
+div.slideshow_content div.slideshow_view {
+  width: var(--width);
+  height: var(--height);
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+div.slideshow_content div.slideshow_view.slideshow_currentView {
+  opacity: 1;
+}
+
 body {
   --wp--preset--color--black: #000000;
   --wp--preset--color--cyan-bluish-gray: #abb8c3;

@@ -461,7 +461,6 @@
                   <p></p>
                   <div
                     class="slideshow_container slideshow_container_style-dark"
-                    style="height: 400px; width: 720px"
                     data-slideshow-id="217"
                     data-style-name="style-dark"
                     data-style-version="2.3.1"
@@ -469,11 +468,9 @@
                   >
                     <div
                       class="slideshow_content"
-                      style="width: 720px; height: 400px"
                     >
                       <div
                         class="slideshow_view slideshow_currentView"
-                        style="width: 720px; height: 400px"
                       >
                         <div
                           class="slideshow_slide slideshow_slide_image"
@@ -518,7 +515,6 @@
                       </div>
                       <div
                         class="slideshow_view"
-                        style="top: 400px; width: 720px; height: 400px"
                       >
                         <div
                           class="slideshow_slide slideshow_slide_image"
@@ -572,7 +568,6 @@
                       </div>
                       <div
                         class="slideshow_view"
-                        style="top: 400px; width: 720px; height: 400px"
                       >
                         <div
                           class="slideshow_slide slideshow_slide_image"
@@ -625,7 +620,6 @@
                       </div>
                       <div
                         class="slideshow_view"
-                        style="top: 400px; width: 720px; height: 400px"
                       >
                         <div
                           class="slideshow_slide slideshow_slide_image"
@@ -676,19 +670,6 @@
 
                         <div style="clear: both"></div>
                       </div>
-                    </div>
-
-                    <div
-                      class="slideshow_controlPanel slideshow_transparent"
-                      style="display: none"
-                    >
-                      <ul>
-                        <li
-                          class="slideshow_togglePlay"
-                          data-play-text="Play"
-                          data-pause-text="Pause"
-                        ></li>
-                      </ul>
                     </div>
 
                     <div
@@ -766,8 +747,6 @@
                         </ul>
                       </div>
                     </div>
-
-                    <!-- WordPress Slideshow Version 2.3.1 -->
                   </div>
 
                   <p></p>
@@ -843,48 +822,30 @@
         src="/wp-content/themes/specia%203/js/skip-link-focus-fix.js"
         id="skip-link-focus-fix-js"
       ></script>
-      <script
-        type="text/javascript"
-        id="slideshow-jquery-image-gallery-script-js-extra"
-      >
-        /* <![CDATA[ */
-        var SlideshowPluginSettings_217 = {
-          animation: "slide",
-          slideSpeed: 1,
-          descriptionSpeed: 0.4,
-          intervalSpeed: 3,
-          slidesPerView: 1,
-          maxWidth: 0,
-          aspectRatio: "3:1",
-          height: 400,
-          imageBehaviour: "natural",
-          showDescription: true,
-          hideDescription: false,
-          preserveSlideshowDimensions: false,
-          enableResponsiveness: true,
-          play: true,
-          loop: true,
-          pauseOnHover: true,
-          controllable: true,
-          hideNavigationButtons: false,
-          showPagination: true,
-          hidePagination: true,
-          controlPanel: false,
-          hideControlPanel: true,
-          waitUntilLoaded: true,
-          showLoadingIcon: true,
-          random: false,
-          avoidFilter: true,
-        };
-        var slideshow_jquery_image_gallery_script_adminURL =
-          "https:\/\/modellingdh.eu\/wp-admin\/";
-        /* ]]> */
+      <script type="text/javascript">
+        /* Slideshow fix */
+        const prevButton = document.querySelector('div.slideshow_previous');
+        const nextButton = document.querySelector('div.slideshow_next');
+
+        let index = 0;
+        const views = Array.from(document.querySelectorAll('div.slideshow_view'));
+
+        const slide = (newIndex) => {
+          const prevView = views[index % views.length];
+          const nextView = views[newIndex % views.length];
+          index = newIndex;
+          prevView.classList.remove('slideshow_currentView');
+          nextView.classList.add('slideshow_currentView');
+        }
+
+        prevButton.addEventListener('click', () => {
+          slide((index <= 0) ? views.length - 1 : index - 1)
+        });
+
+        nextButton.addEventListener('click', () => {
+          slide(index + 1)
+        });
       </script>
-      <script
-        type="text/javascript"
-        src="/wp-content/plugins/slideshow-jquery-image-gallery/js/min/all.frontend.min.js"
-        id="slideshow-jquery-image-gallery-script-js"
-      ></script>
     </div>
   </body>
 </html>
