@@ -42,7 +42,7 @@
 }
 .slideshow_container .slideshow_transparent,
 .slideshow_container .slideshow_transparent:hover {
-  zoom: 1;
+  transform: scale(1);
 }
 .slideshow_container .slideshow_content {
   position: relative !important;

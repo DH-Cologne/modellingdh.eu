@@ -580,7 +580,7 @@ body img {
 }
 .slider-version .owl-theme .owl-dots .owl-dot {
     display: inline-block;
-    zoom: 1;
+    transform: scale(1);
     *display: inline
 }
 .slider-version .owl-theme .owl-dots .owl-dot span{
