@@ -1,22 +1,3 @@
-html, body, div#page {
-  height:  100%;
-}
-
-div#page {
-  display: flex;
-  flex-direction: column;
-}
-
-div#page div#content {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-div#page div#content section.page-wrapper {
-  flex-grow: 1;
-}
-
 nav.navbar {
   animation-duration:  0s !important;
   position: fixed !important;
