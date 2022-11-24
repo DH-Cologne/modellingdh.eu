@@ -311,7 +311,6 @@
                     sizes="(max-width: 548px) 100vw, 548px"
                 /></a>
 
-
                 <button
                   type="button"
                   class="navbar-toggle collapsed"
@@ -466,12 +465,8 @@
                     data-style-version="2.3.1"
                     data-slideshow-active="1"
                   >
-                    <div
-                      class="slideshow_content"
-                    >
-                      <div
-                        class="slideshow_view slideshow_currentView"
-                      >
+                    <div class="slideshow_content">
+                      <div class="slideshow_view slideshow_currentView">
                         <div
                           class="slideshow_slide slideshow_slide_image"
                           style="
@@ -513,9 +508,7 @@
 
                         <div style="clear: both"></div>
                       </div>
-                      <div
-                        class="slideshow_view"
-                      >
+                      <div class="slideshow_view">
                         <div
                           class="slideshow_slide slideshow_slide_image"
                           style="
@@ -566,9 +559,7 @@
 
                         <div style="clear: both"></div>
                       </div>
-                      <div
-                        class="slideshow_view"
-                      >
+                      <div class="slideshow_view">
                         <div
                           class="slideshow_slide slideshow_slide_image"
                           style="
@@ -618,9 +609,7 @@
 
                         <div style="clear: both"></div>
                       </div>
-                      <div
-                        class="slideshow_view"
-                      >
+                      <div class="slideshow_view">
                         <div
                           class="slideshow_slide slideshow_slide_image"
                           style="
@@ -824,26 +813,28 @@
       ></script>
       <script type="text/javascript">
         /* Slideshow fix */
-        const prevButton = document.querySelector('div.slideshow_previous');
-        const nextButton = document.querySelector('div.slideshow_next');
+        const prevButton = document.querySelector("div.slideshow_previous");
+        const nextButton = document.querySelector("div.slideshow_next");
 
         let index = 0;
-        const views = Array.from(document.querySelectorAll('div.slideshow_view'));
+        const views = Array.from(
+          document.querySelectorAll("div.slideshow_view")
+        );
 
         const slide = (newIndex) => {
           const prevView = views[index % views.length];
           const nextView = views[newIndex % views.length];
           index = newIndex;
-          prevView.classList.remove('slideshow_currentView');
-          nextView.classList.add('slideshow_currentView');
-        }
+          prevView.classList.remove("slideshow_currentView");
+          nextView.classList.add("slideshow_currentView");
+        };
 
-        prevButton.addEventListener('click', () => {
-          slide((index <= 0) ? views.length - 1 : index - 1)
+        prevButton.addEventListener("click", () => {
+          slide(index <= 0 ? views.length - 1 : index - 1);
         });
 
-        nextButton.addEventListener('click', () => {
-          slide(index + 1)
+        nextButton.addEventListener("click", () => {
+          slide(index + 1);
         });
       </script>
     </div>
