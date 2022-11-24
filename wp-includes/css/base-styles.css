@@ -1,3 +1,30 @@
+html, body, div#page {
+  height:  100%;
+}
+
+div#page {
+  display: flex;
+  flex-direction: column;
+}
+
+div#page div#content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+div#page div#content section.page-wrapper {
+  flex-grow: 1;
+}
+
+nav.navbar {
+  animation-duration:  0s !important;
+  position: fixed !important;
+  top: 0px !important;
+  width: 100vw !important;
+  padding:  12px 0px 4px !important;
+}
+
 body {
   --wp--preset--color--black: #000000;
   --wp--preset--color--cyan-bluish-gray: #abb8c3;
